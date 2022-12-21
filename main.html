@@ -7,34 +7,37 @@
 </head>
 
 <body>
-	<label>Name: </label>
-	<input id="name" />
+	<form method="post">
+
+		<label for="name">Name:</label>
+		<input id="name" type="text" required/>
 	<br />
-	<label>Email: </label>
-	<input id="email" />
+	<label for="email">Email: </label>
+	<input id="email" type="text" required />
 	<br />
-	<label>Gender: </label>
-	<input type="radio" id="gender"/> Male
-	<input type="radio" id="gender" /> Female
-	<input type="radio" id="gender" /> Others
+	<input type="url" required id="portfolio"/>
+	<label for="gender">Gender:</label>
+	<input type="radio" id="gender" required/> Male
+	<input type="radio" id="gender" required/> Female
 	<br />
-	<label>Laptop </label>
+	<label for="laptop">Laptop</label>
 	<select id="laptop">
 		<option>Apple</option>
 		<option>Asus</option>
 		<option>HP</option>
 	</select>
 	<br />
-	<label>Age: </label>
-	<input id="age"/>
+	<label for="age">Age:</label>
+	<input type="age" id="age" required />
 	<br />
-	<label>DOB</label>
-	<input id="dob" />
+	<label for="dob">DOB</label>
+	<input type="dob" id="dob" required  />
 	<br />
-	<label>Password</label>
-	<input id="password"/>
+	<label for="password">Password</label>
+	<input type="password" required id="password"/>
 	<br />
 	<button id="submit button">Submit button</button>
+</form>
 	<script type="text/javascript" src="./script.js">
 	</script>
 
